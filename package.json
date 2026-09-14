@@ -1,0 +1,19 @@
+{
+  "name": "pg6301-2026-resit-khalidkhalif",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "npm install --prefix server && npm start --prefix server",
+    "heroku-postbuild": "npm install --prefix client --include=dev && npm run build --prefix client",
+    "dev": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "test": "concurrently \"npm test --prefix server\" \"npm test --prefix client\"",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "prettier": "^3.8.1"
+  },
+  "engines": {
+    "node": "20.x"
+  }
+}
