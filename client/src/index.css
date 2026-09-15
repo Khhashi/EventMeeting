@@ -1006,6 +1006,8 @@ select {
 textarea {
   resize: vertical;
   min-height: 120px;
+  max-height: 500px;
+  overflow: auto;
 }
 
 .message-success {
