@@ -988,6 +988,8 @@ form {
   display: flex;
   flex-direction: column;
   gap: 18px;
+  min-width: 0;
+  width: 100%;
 }
 
 input,
@@ -995,6 +997,7 @@ textarea,
 select {
   width: 100%;
   max-width: 100%;
+  min-width: 0;
   padding: 12px 16px;
   border-radius: 14px;
   border: 1px solid #dbe4f0;
@@ -1004,6 +1007,7 @@ select {
 }
 
 textarea {
+  display: block;
   resize: vertical;
   min-height: 120px;
   max-height: 500px;
